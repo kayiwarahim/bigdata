@@ -13,6 +13,7 @@ st.set_page_config(
 
 DB_PATH = "working/patents.db"
 
+
 # -----------------------------------
 # DB CONNECTION
 # -----------------------------------
@@ -27,7 +28,7 @@ def run_query(query):
 # -----------------------------------
 # TITLE
 # -----------------------------------
-st.title("📊 Global Patent Intelligence Dashboard")
+st.title("Global Patent Intelligence Dashboard")
 
 st.markdown("Analyze patents, inventors, companies, and trends.")
 
@@ -49,7 +50,7 @@ st.divider()
 # -----------------------------------
 # TOP INVENTORS
 # -----------------------------------
-st.subheader("🥇 Top Inventors")
+st.subheader("Top Inventors")
 
 top_inventors = run_query("""
 SELECT i.name, COUNT(*) AS total_patents
@@ -65,7 +66,7 @@ st.dataframe(top_inventors, use_container_width=True)
 # -----------------------------------
 # TOP COMPANIES
 # -----------------------------------
-st.subheader("🏢 Top Companies")
+st.subheader("Top Companies")
 
 top_companies = run_query("""
 SELECT c.name, COUNT(*) AS total_patents
@@ -81,7 +82,7 @@ st.dataframe(top_companies, use_container_width=True)
 # -----------------------------------
 # TOP COUNTRIES
 # -----------------------------------
-st.subheader("🌍 Top Countries")
+st.subheader("Top Countries")
 
 top_countries = run_query("""
 SELECT country, COUNT(*) AS total
@@ -96,7 +97,7 @@ st.bar_chart(top_countries.set_index('country'))
 # -----------------------------------
 # TRENDS OVER TIME
 # -----------------------------------
-st.subheader("📈 Patent Trends Over Time")
+st.subheader("Patent Trends Over Time")
 
 trends = run_query("""
 SELECT year, COUNT(*) AS total_patents
@@ -117,7 +118,7 @@ st.pyplot(fig)
 # -----------------------------------
 # SEARCH SECTION
 # -----------------------------------
-st.subheader("🔍 Search Patents")
+st.subheader("Search Patents")
 
 search_term = st.text_input("Enter keyword (title search):")
 
@@ -135,7 +136,7 @@ if search_term:
 # -----------------------------------
 # JOIN DATA VIEW
 # -----------------------------------
-st.subheader("🔗 Sample Patent Relationships")
+st.subheader("Sample Patent Relationships")
 
 joined_data = run_query("""
 SELECT p.patent_title, i.name AS inventor, c.name AS company
