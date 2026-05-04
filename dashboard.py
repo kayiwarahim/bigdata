@@ -1,7 +1,11 @@
-import streamlit as st
-import pandas as pd
+"""Streamlit dashboard for patent intelligence analytics."""
+
 import sqlite3
+
 import matplotlib.pyplot as plt
+import pandas as pd
+import streamlit as st
+
 
 # -----------------------------------
 # CONFIG
@@ -18,10 +22,10 @@ DB_PATH = "working/patents.db"
 # DB CONNECTION
 # -----------------------------------
 @st.cache_data
-def run_query(query):
-    conn = sqlite3.connect(DB_PATH)
-    df = pd.read_sql_query(query, conn)
-    conn.close()
+def run_query(query: str, params: tuple = ()) -> pd.DataFrame:
+    """Execute SQL query and return results as a DataFrame."""
+    with sqlite3.connect(DB_PATH) as conn:
+        df = pd.read_sql_query(query, conn, params=params)
     return df
 
 
@@ -29,7 +33,6 @@ def run_query(query):
 # TITLE
 # -----------------------------------
 st.title("Global Patent Intelligence Dashboard")
-
 st.markdown("Analyze patents, inventors, companies, and trends.")
 
 # -----------------------------------
@@ -37,9 +40,9 @@ st.markdown("Analyze patents, inventors, companies, and trends.")
 # -----------------------------------
 col1, col2, col3 = st.columns(3)
 
-total_patents = run_query("SELECT COUNT(*) as total FROM patents")['total'][0]
-total_inventors = run_query("SELECT COUNT(*) as total FROM inventors")['total'][0]
-total_companies = run_query("SELECT COUNT(*) as total FROM companies")['total'][0]
+total_patents = run_query("SELECT COUNT(*) as total FROM patents")["total"][0]
+total_inventors = run_query("SELECT COUNT(*) as total FROM inventors")["total"][0]
+total_companies = run_query("SELECT COUNT(*) as total FROM companies")["total"][0]
 
 col1.metric("Total Patents", f"{total_patents:,}")
 col2.metric("Total Inventors", f"{total_inventors:,}")
@@ -92,7 +95,7 @@ ORDER BY total DESC
 LIMIT 10
 """)
 
-st.bar_chart(top_countries.set_index('country'))
+st.bar_chart(top_countries.set_index("country"))
 
 # -----------------------------------
 # TRENDS OVER TIME
@@ -108,7 +111,7 @@ ORDER BY year
 """)
 
 fig, ax = plt.subplots()
-ax.plot(trends['year'], trends['total_patents'])
+ax.plot(trends["year"], trends["total_patents"])
 ax.set_title("Patents per Year")
 ax.set_xlabel("Year")
 ax.set_ylabel("Count")
@@ -123,13 +126,15 @@ st.subheader("Search Patents")
 search_term = st.text_input("Enter keyword (title search):")
 
 if search_term:
-    results = run_query(f"""
+    search_sql = """
     SELECT patent_title, year
     FROM patents
-    WHERE patent_title LIKE '%{search_term}%'
+    WHERE patent_title LIKE ?
     LIMIT 50
-    """)
-    
+    """
+
+    results = run_query(search_sql, (f"%{search_term}%",))
+
     st.write(f"Results for '{search_term}':")
     st.dataframe(results, use_container_width=True)
 
