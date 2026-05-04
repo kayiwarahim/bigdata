@@ -1,80 +1,88 @@
 {
-    "total_patents": 10000,
+    "total_patents": 50000,
     "top_inventors": [],
     "top_companies": [
         {
-            "name": "ZTE CORPORATION",
-            "patents": 1
-        },
-        {
             "name": "SAMSUNG DISPLAY CO., LTD.",
-            "patents": 1
+            "patents": 9
         },
         {
-            "name": "PANASONIC HOLDINGS CORPORATION",
-            "patents": 1
+            "name": "International Business Machines Corporation",
+            "patents": 7
         },
         {
-            "name": "Novo Industri A/S",
-            "patents": 1
+            "name": "SEIKO EPSON CORPORATION",
+            "patents": 3
         },
         {
-            "name": "Kia Motors Corporation",
-            "patents": 1
+            "name": "Micron Technology, Inc.",
+            "patents": 3
         },
         {
-            "name": "Hyundai Motor Company",
-            "patents": 1
+            "name": "LG ELECTRONICS INC.",
+            "patents": 3
         },
         {
-            "name": "Catalytic Distillation Technologies",
-            "patents": 1
+            "name": "Kabushiki Kaisha Toshiba",
+            "patents": 3
         },
         {
-            "name": "AT&T Intellectual Property I, L.P.",
-            "patents": 1
+            "name": "HONDA MOTOR CO., LTD.",
+            "patents": 3
+        },
+        {
+            "name": "GOOGLE LLC",
+            "patents": 3
+        },
+        {
+            "name": "Boston Scientific Scimed, Inc.",
+            "patents": 3
+        },
+        {
+            "name": "ZTE CORPORATION",
+            "patents": 2
         }
     ],
     "top_countries": [
         {
             "country": null,
-            "total": 7780
+            "total": 25063
         },
         {
             "country": "US",
-            "total": 1383
+            "total": 9546
         },
         {
             "country": "JP",
-            "total": 367
-        },
-        {
-            "country": "KR",
-            "total": 162
+            "total": 4348
         },
         {
             "country": "DE",
-            "total": 89
+            "total": 2457
         },
         {
-            "country": "CA",
-            "total": 44
-        },
-        {
-            "country": "GB",
-            "total": 33
-        },
-        {
-            "country": "FR",
-            "total": 26
-        },
-        {
-            "country": "IN",
-            "total": 20
+            "country": "KR",
+            "total": 1917
         },
         {
             "country": "CN",
-            "total": 15
+            "total": 1390
+        },
+        {
+            "country": "FR",
+            "total": 892
+        },
+        {
+            "country": "GB",
+            "total": 713
+        },
+        {
+            "country": "CA",
+            "total": 572
+        },
+        {
+            "country": "IL",
+            "total": 439
         }
     ]
 }
