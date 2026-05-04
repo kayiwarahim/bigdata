@@ -126,14 +126,15 @@ st.subheader("Search Patents")
 search_term = st.text_input("Enter keyword (title search):")
 
 if search_term:
-    search_sql = """
-    SELECT patent_title, year
-    FROM patents
-    WHERE patent_title LIKE ?
-    LIMIT 50
-    """
-
-    results = run_query(search_sql, (f"%{search_term}%",))
+    results = run_query(
+        """
+        SELECT patent_title, year
+        FROM patents
+        WHERE patent_title LIKE ?
+        LIMIT 50
+        """,
+        (f"%{search_term}%",)
+    )
 
     st.write(f"Results for '{search_term}':")
     st.dataframe(results, use_container_width=True)
