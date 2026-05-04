@@ -1,88 +1,129 @@
 {
     "total_patents": 50000,
-    "top_inventors": [],
+    "top_inventors": [
+        {
+            "name": "Dong Min KANG",
+            "total_patents": 2
+        },
+        {
+            "name": "Zuzana Kossaczka",
+            "total_patents": 1
+        },
+        {
+            "name": "Zhouyue Pi",
+            "total_patents": 1
+        },
+        {
+            "name": "Zhibiao Zhao",
+            "total_patents": 1
+        },
+        {
+            "name": "Zhenyu Li",
+            "total_patents": 1
+        },
+        {
+            "name": "Yutaka Mizuno",
+            "total_patents": 1
+        },
+        {
+            "name": "Yutaka Miki",
+            "total_patents": 1
+        },
+        {
+            "name": "Yurie Ota",
+            "total_patents": 1
+        },
+        {
+            "name": "Yunjung Yi",
+            "total_patents": 1
+        },
+        {
+            "name": "Yun-song Jeong",
+            "total_patents": 1
+        }
+    ],
     "top_companies": [
         {
             "name": "SAMSUNG DISPLAY CO., LTD.",
-            "patents": 9
+            "total_patents": 9
         },
         {
             "name": "International Business Machines Corporation",
-            "patents": 7
+            "total_patents": 7
         },
         {
             "name": "SEIKO EPSON CORPORATION",
-            "patents": 3
+            "total_patents": 3
         },
         {
             "name": "Micron Technology, Inc.",
-            "patents": 3
+            "total_patents": 3
         },
         {
             "name": "LG ELECTRONICS INC.",
-            "patents": 3
+            "total_patents": 3
         },
         {
             "name": "Kabushiki Kaisha Toshiba",
-            "patents": 3
+            "total_patents": 3
         },
         {
             "name": "HONDA MOTOR CO., LTD.",
-            "patents": 3
+            "total_patents": 3
         },
         {
             "name": "GOOGLE LLC",
-            "patents": 3
+            "total_patents": 3
+        },
+        {
+            "name": "Comcast Cable Communications, LLC",
+            "total_patents": 3
         },
         {
             "name": "Boston Scientific Scimed, Inc.",
-            "patents": 3
-        },
-        {
-            "name": "ZTE CORPORATION",
-            "patents": 2
+            "total_patents": 3
         }
     ],
     "top_countries": [
         {
             "country": null,
-            "total": 25063
+            "total": 24089
         },
         {
             "country": "US",
-            "total": 9546
+            "total": 9020
         },
         {
             "country": "JP",
-            "total": 4348
+            "total": 4107
         },
         {
             "country": "DE",
-            "total": 2457
+            "total": 2383
         },
         {
             "country": "KR",
-            "total": 1917
+            "total": 1753
         },
         {
             "country": "CN",
-            "total": 1390
+            "total": 1314
         },
         {
             "country": "FR",
-            "total": 892
+            "total": 878
         },
         {
             "country": "GB",
-            "total": 713
+            "total": 699
         },
         {
             "country": "CA",
-            "total": 572
+            "total": 560
         },
         {
             "country": "IL",
-            "total": 439
+            "total": 421
         }
     ]
 }
