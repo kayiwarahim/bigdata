@@ -1,0 +1,80 @@
+{
+    "total_patents": 10000,
+    "top_inventors": [],
+    "top_companies": [
+        {
+            "name": "ZTE CORPORATION",
+            "patents": 1
+        },
+        {
+            "name": "SAMSUNG DISPLAY CO., LTD.",
+            "patents": 1
+        },
+        {
+            "name": "PANASONIC HOLDINGS CORPORATION",
+            "patents": 1
+        },
+        {
+            "name": "Novo Industri A/S",
+            "patents": 1
+        },
+        {
+            "name": "Kia Motors Corporation",
+            "patents": 1
+        },
+        {
+            "name": "Hyundai Motor Company",
+            "patents": 1
+        },
+        {
+            "name": "Catalytic Distillation Technologies",
+            "patents": 1
+        },
+        {
+            "name": "AT&T Intellectual Property I, L.P.",
+            "patents": 1
+        }
+    ],
+    "top_countries": [
+        {
+            "country": null,
+            "total": 7780
+        },
+        {
+            "country": "US",
+            "total": 1383
+        },
+        {
+            "country": "JP",
+            "total": 367
+        },
+        {
+            "country": "KR",
+            "total": 162
+        },
+        {
+            "country": "DE",
+            "total": 89
+        },
+        {
+            "country": "CA",
+            "total": 44
+        },
+        {
+            "country": "GB",
+            "total": 33
+        },
+        {
+            "country": "FR",
+            "total": 26
+        },
+        {
+            "country": "IN",
+            "total": 20
+        },
+        {
+            "country": "CN",
+            "total": 15
+        }
+    ]
+}
