@@ -1,4 +1,4 @@
 g_*/
 venv/
-working/*.csv
-working/*.db
+# working/*.csv
+# working/*.db
