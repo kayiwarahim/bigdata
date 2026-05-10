@@ -1,12 +1,32 @@
 {
-    "total_patents": 50000,
+    "total_patents": 100000,
     "top_inventors": [
+        {
+            "name": "Yu Ngok Li",
+            "total_patents": 2
+        },
+        {
+            "name": "Rupert Leslie Alexander Goodings",
+            "total_patents": 2
+        },
         {
             "name": "Dong Min KANG",
             "total_patents": 2
         },
         {
+            "name": "Chris Cant",
+            "total_patents": 2
+        },
+        {
+            "name": "\u00d6rjan Ahlgren",
+            "total_patents": 1
+        },
+        {
             "name": "Zuzana Kossaczka",
+            "total_patents": 1
+        },
+        {
+            "name": "Zunqing He",
             "total_patents": 1
         },
         {
@@ -20,110 +40,90 @@
         {
             "name": "Zhenyu Li",
             "total_patents": 1
-        },
-        {
-            "name": "Yutaka Mizuno",
-            "total_patents": 1
-        },
-        {
-            "name": "Yutaka Miki",
-            "total_patents": 1
-        },
-        {
-            "name": "Yurie Ota",
-            "total_patents": 1
-        },
-        {
-            "name": "Yunjung Yi",
-            "total_patents": 1
-        },
-        {
-            "name": "Yun-song Jeong",
-            "total_patents": 1
         }
     ],
     "top_companies": [
         {
             "name": "SAMSUNG DISPLAY CO., LTD.",
-            "total_patents": 9
+            "total_patents": 31
         },
         {
             "name": "International Business Machines Corporation",
-            "total_patents": 7
+            "total_patents": 21
         },
         {
-            "name": "SEIKO EPSON CORPORATION",
-            "total_patents": 3
-        },
-        {
-            "name": "Micron Technology, Inc.",
-            "total_patents": 3
+            "name": "SONY GROUP CORPORATION",
+            "total_patents": 10
         },
         {
             "name": "LG ELECTRONICS INC.",
-            "total_patents": 3
+            "total_patents": 10
         },
         {
-            "name": "Kabushiki Kaisha Toshiba",
-            "total_patents": 3
+            "name": "Siemens Aktiengesellschaft",
+            "total_patents": 9
         },
         {
-            "name": "HONDA MOTOR CO., LTD.",
-            "total_patents": 3
+            "name": "SEIKO EPSON CORPORATION",
+            "total_patents": 9
         },
         {
-            "name": "GOOGLE LLC",
-            "total_patents": 3
+            "name": "Micron Technology, Inc.",
+            "total_patents": 8
         },
         {
-            "name": "Comcast Cable Communications, LLC",
-            "total_patents": 3
+            "name": "MITSUBISHI ELECTRIC CORPORATION",
+            "total_patents": 8
         },
         {
-            "name": "Boston Scientific Scimed, Inc.",
-            "total_patents": 3
+            "name": "CANON KABUSHIKI KAISHA",
+            "total_patents": 8
+        },
+        {
+            "name": "Apple Inc.",
+            "total_patents": 8
         }
     ],
     "top_countries": [
         {
-            "country": null,
-            "total": 24089
-        },
-        {
             "country": "US",
-            "total": 9020
+            "total": 44399
         },
         {
             "country": "JP",
-            "total": 4107
+            "total": 15210
         },
         {
             "country": "DE",
-            "total": 2383
+            "total": 5509
         },
         {
             "country": "KR",
-            "total": 1753
+            "total": 4678
         },
         {
             "country": "CN",
-            "total": 1314
+            "total": 3979
+        },
+        {
+            "country": "TW",
+            "total": 2447
         },
         {
             "country": "FR",
-            "total": 878
+            "total": 1982
         },
         {
             "country": "GB",
-            "total": 699
+            "total": 1963
         },
         {
             "country": "CA",
-            "total": 560
+            "total": 1848
         },
         {
-            "country": "IL",
-            "total": 421
+            "country": null,
+            "total": 1119
         }
     ]
 }
