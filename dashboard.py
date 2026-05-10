@@ -11,7 +11,7 @@ import plotly.graph_objects as go
 # -----------------------------------
 st.set_page_config(
     page_title="Patent Intelligence Dashboard",
-    page_icon="📊",
+    page_icon=".",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -110,7 +110,7 @@ def run_query(query: str, params: tuple = ()) -> pd.DataFrame:
 # SIDEBAR
 # -----------------------------------
 with st.sidebar:
-    st.title("🧠 Patent Intel")
+    st.title(" Patent Intel")
     st.markdown("### Navigation")
 
     section = st.radio(
@@ -132,7 +132,7 @@ with st.sidebar:
 # HEADER
 # -----------------------------------
 st.markdown("""
-<h1 style='font-size:48px;'>📊 Global Patent Intelligence</h1>
+<h1 style='font-size:48px;'> Global Patent Intelligence</h1>
 <p style='color:#94a3b8; font-size:18px;'>
 Analyze patents, inventors, companies, and innovation trends worldwide.
 </p>
@@ -252,7 +252,7 @@ if section == "Overview":
 # ===================================
 elif section == "Inventors":
 
-    st.subheader("👨‍🔬 Top Inventors")
+    st.subheader(" Top Inventors")
 
     top_inventors = run_query("""
     SELECT i.name, COUNT(*) AS total_patents
@@ -287,7 +287,7 @@ elif section == "Inventors":
 # ===================================
 elif section == "Companies":
 
-    st.subheader("🏢 Top Companies")
+    st.subheader("Top Companies")
 
     top_companies = run_query("""
     SELECT c.name, COUNT(*) AS total_patents
@@ -320,7 +320,7 @@ elif section == "Companies":
 # ===================================
 elif section == "Countries":
 
-    st.subheader("🌍 Country Analytics")
+    st.subheader("Country Analytics")
 
     top_countries = run_query("""
     SELECT country, COUNT(*) AS total
@@ -351,7 +351,7 @@ elif section == "Countries":
 # ===================================
 elif section == "Search":
 
-    st.subheader("🔎 Search Patents")
+    st.subheader("Search Patents")
 
     search_term = st.text_input(
         "Enter keyword to search patent titles"
@@ -379,7 +379,7 @@ elif section == "Search":
 # ===================================
 elif section == "Relationships":
 
-    st.subheader("🔗 Patent Relationships")
+    st.subheader("Patent Relationships")
 
     joined_data = run_query("""
     SELECT
@@ -403,4 +403,4 @@ elif section == "Relationships":
 # FOOTER
 # -----------------------------------
 st.markdown("---")
-st.caption("🚀 Patent Intelligence Analytics Dashboard | Built with Streamlit")
+st.caption(" Patent Intelligence Analytics Dashboard | Built with Streamlit")
