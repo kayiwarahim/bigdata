@@ -125,8 +125,6 @@ with st.sidebar:
         ]
     )
 
-    st.markdown("---")
-    st.caption("Built with Streamlit")
 
 # -----------------------------------
 # HEADER
@@ -403,4 +401,4 @@ elif section == "Relationships":
 # FOOTER
 # -----------------------------------
 st.markdown("---")
-st.caption(" Patent Intelligence Analytics Dashboard | Built with Streamlit")
+st.caption(" Patent Intelligence Analytics Dashboard ")
